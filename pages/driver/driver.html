@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>راننده</title>
+
+    <link
+      rel="stylesheet"
+      href="https://static.neshan.org/sdk/mapboxgl/v1.13.2/neshan-sdk/v1.1.1/index.css"
+    />
+    <script src="https://static.neshan.org/sdk/mapboxgl/v1.13.2/neshan-sdk/v1.1.1/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mapbox-polyline/1.2.1/polyline.js"></script>
+    <link rel="stylesheet" href="src/styles/mainStyle.css" />
+    <link href="https://fonts.cdnfonts.com/css/iranian-sans" rel="stylesheet" />
+    <link rel="stylesheet" href="user.css" />
+    <link rel="stylesheet" href="driver.css" />
+    <link rel="stylesheet" href="../../src/styles/mainStyle.css" />
+  </head>
+  <body>
+    <div class="driver-container">
+      <div id="map"></div>
+      <div class="info">
+        <div class="travel-info">
+          <p class="price"></p>
+          <p class="time"></p>
+          <p class="distance"></p>
+          <p class="payment-method"></p>
+          <!-- <p class="driver-time"></p> -->
+          <!-- <p class="Travel_accepted"></p> -->
+          <button class="submit">قبول کردن سفر</button>
+          <button class="submit end-travel">اتمام سفر</button>
+        </div>
+        <div class="travels">
+          <p>مسافر های نزدیک به شما</p>
+          <ul class="list"></ul>
+        </div>
+      </div>
+      <button class="logout">خروج از حساب</button>
+    </div>
+  </body>
+  <script src="../../mainjs.js"></script>
+  <script src="driver.js"></script>
+</html>
