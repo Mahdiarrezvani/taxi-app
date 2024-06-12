@@ -282,7 +282,7 @@ function ruleUser() {
   let cookie = localStorage.getItem("userInfo");
   let userInfo = JSON.parse(cookie);
   if (userInfo.rule === "driver") {
-    location.assign("/pages/driver/driver.html");
+    location.assign("pages/driver/driver.html");
   }
 }
 

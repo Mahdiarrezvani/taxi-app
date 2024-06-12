@@ -22,7 +22,7 @@ const getUser = () => {
                 location.assign("/")
             } else {
                 alert("شما ثبت نام نکرده اید")
-                location.assign("/pages/Register/Register.html")
+                location.assign("pages/Register/Register.html")
             }
         })
         

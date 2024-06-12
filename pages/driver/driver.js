@@ -162,7 +162,7 @@ const getAllTravels = () => {
         list.insertAdjacentHTML(
           "beforeend",
           `
-            <li><a href="/pages/driver/driver.html?id=${travelInfo.id}">${travelInfo.allData[0].legs[0].summary}</a></li>
+            <li><a href="pages/driver/driver.html?id=${travelInfo.id}">${travelInfo.allData[0].legs[0].summary}</a></li>
             `
         );
       });
@@ -221,5 +221,5 @@ let logoutBtn = document.querySelector(".logout");
 
 logoutBtn.addEventListener("click", () => {
   localStorage.removeItem("userInfo");
-  location.assign("/pages/Login/Login.html");
+  location.assign("pages/Login/Login.html");
 });
