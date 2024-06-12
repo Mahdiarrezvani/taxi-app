@@ -168,7 +168,7 @@ function ruleUser() {
   let cookie = localStorage.getItem("userInfo");
   let userInfo = JSON.parse(cookie);
   if (userInfo.rule === "driver") {
-    location.assign("pages/driver/driver.html");
+    location.assign("/pages/driver/driver.html");
   }
 }
 
@@ -178,5 +178,5 @@ let logoutBtn = document.querySelector(".logout");
 
 logoutBtn.addEventListener("click", () => {
   localStorage.removeItem("userInfo");
-  location.assign("pages/Login/Login.html");
+  location.assign("/pages/Login/Login.html");
 });

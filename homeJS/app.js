@@ -259,7 +259,7 @@ reqDriver.addEventListener("click", async () => {
     },
     body: JSON.stringify(body),
   }).then(() => {
-    location.assign(`pages/user/user.html?id=${idRand}`);
+    location.assign(`/pages/user/user.html?id=${idRand}`);
   });
 });
 
@@ -282,7 +282,7 @@ function ruleUser() {
   let cookie = localStorage.getItem("userInfo");
   let userInfo = JSON.parse(cookie);
   if (userInfo.rule === "driver") {
-    location.assign("pages/driver/driver.html");
+    location.assign("/pages/driver/driver.html");
   }
 }
 
